@@ -47,7 +47,7 @@ variables:                    # Pass environment variables as key value pairs.
 
 secrets:                      # Pass secrets from AWS Systems Manager (SSM) Parameter Store.
   ADMIN_PASSWORD: STATPING_ADMIN_PASSWORD
-  DB_PASS: 'arn:aws:secretsmanager:us-east-2:651426287273:secret:statping/test/statping/aurora-pg-tzV5s0'
+  DB_PASS: 'arn:aws:secretsmanager:us-east-2:651426287273:secret:statping/test/statping/aurora-pg-Ay5LFG'
 
 # You can override any of the values defined above by environment.
 #environments:
