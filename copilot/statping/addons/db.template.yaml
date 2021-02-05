@@ -117,6 +117,10 @@ Outputs:
     Description: 'The connection endpoint for the DB cluster.'
     Value: !GetAtt 'AuroraDBCluster.Endpoint.Address'
 
+  DbHost: # injected as DB_HOST environment variable by Copilot.
+    Description: 'The connection endpoint for the DB cluster.'
+    Value: !GetAtt 'AuroraDBCluster.Endpoint.Address'
+
   RdsSecret: # injected as RDS_SECRET environment variable by Copilot.
     Description: 'The secret that username and password.'
     Value: !Ref AuroraMasterSecret
