@@ -40,7 +40,7 @@ variables:                    # Pass environment variables as key value pairs.
   NAME: "Lazy-Mon"
   ADMIN_USER: brentley
   DB_CONN: postgres
-  DB_HOST: "$RDS_ENDPOINT"
+  DB_HOST: $RDS_ENDPOINT
   DB_USER: postgres
   DB_PASS: 'arn:aws:secretsmanager:us-east-2:651426287273:secret:statping/test/statping/aurora-pg-tzV5s0'
   DB_DATABASE: votes
