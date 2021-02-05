@@ -40,15 +40,14 @@ variables:                    # Pass environment variables as key value pairs.
   NAME: "Lazy-Mon"
   ADMIN_USER: brentley
   DB_CONN: postgres
-  DB_HOST: $RDS_ENDPOINT
   DB_USER: postgres
-  DB_PASS: arn:aws:secretsmanager:us-east-2:651426287273:secret:statping/test/statping/aurora-pg-tzV5s0
   DB_DATABASE: votes
   POSTGRES_SSLMODE: enable
   
 
 secrets:                      # Pass secrets from AWS Systems Manager (SSM) Parameter Store.
   ADMIN_PASSWORD: STATPING_ADMIN_PASSWORD
+  DB_PASS: 'arn:aws:secretsmanager:us-east-2:651426287273:secret:statping/test/statping/aurora-pg-tzV5s0'
 
 # You can override any of the values defined above by environment.
 #environments:
