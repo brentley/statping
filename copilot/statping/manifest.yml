@@ -38,7 +38,7 @@ variables:                    # Pass environment variables as key value pairs.
   SAMPLE_DATA: false
   DESCRIPTION: "Monitoring the important stuff"
   NAME: "Lazy-Mon"
-  ADMIN_USER: brentley
+  # ADMIN_USER: brentley
   DB_CONN: postgres
   DB_USER: postgres
   DB_DATABASE: votes
