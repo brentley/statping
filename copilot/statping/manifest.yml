@@ -35,6 +35,7 @@ count: 1
 #
 variables:                    # Pass environment variables as key value pairs.
   LOG_LEVEL: info
+  VERBOSE: 4
   SAMPLE_DATA: true
   DESCRIPTION: "Monitoring the important stuff"
   NAME: "Lazy-Mon"
