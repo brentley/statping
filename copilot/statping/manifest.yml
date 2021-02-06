@@ -20,7 +20,7 @@ http:
   path: '/'
   # You can specify a custom health check path. The default is "/".
   # For additional configuration: https://aws.github.io/copilot-cli/docs/manifest/lb-web-service/#http-healthcheck
-  # healthcheck: '/health'
+  healthcheck: '/health'
   # You can enable sticky sessions.
   # stickiness: true
 
