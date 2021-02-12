@@ -43,7 +43,7 @@ variables:                    # Pass environment variables as key value pairs.
   DB_CONN: postgres
   DB_USER: postgres
   DB_DATABASE: votes
-  USE_CDN: false
+  USE_CDN: "false"
   POSTGRES_SSLMODE: verify-ca
 
 secrets:                      # Pass secrets from AWS Systems Manager (SSM) Parameter Store.
