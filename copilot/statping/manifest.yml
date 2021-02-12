@@ -38,13 +38,13 @@ variables:                    # Pass environment variables as key value pairs.
   VERBOSE: 4
   SAMPLE_DATA: false
   DESCRIPTION: "Monitoring the important stuff"
-  NAME: "Lazy-Mon"
+  NAME: "Lazyops-Monitoring"
   ADMIN_USER: brentley
   DB_CONN: postgres
   DB_USER: postgres
   DB_DATABASE: votes
-  POSTGRES_SSLMODE: verify-ca
   USE_CDN: false
+  POSTGRES_SSLMODE: verify-ca
 
 secrets:                      # Pass secrets from AWS Systems Manager (SSM) Parameter Store.
   ADMIN_PASSWORD: STATPING_ADMIN_PASSWORD
