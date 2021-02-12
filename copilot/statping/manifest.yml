@@ -44,7 +44,7 @@ variables:                    # Pass environment variables as key value pairs.
   DB_USER: postgres
   DB_DATABASE: votes
   POSTGRES_SSLMODE: verify-ca
-  
+  USE_CDN: false
 
 secrets:                      # Pass secrets from AWS Systems Manager (SSM) Parameter Store.
   ADMIN_PASSWORD: STATPING_ADMIN_PASSWORD
