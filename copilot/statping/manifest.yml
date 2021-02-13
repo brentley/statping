@@ -11,6 +11,7 @@ image:
   # Docker build arguments.
   # For additional overrides: https://aws.github.io/copilot-cli/docs/manifest/lb-web-service/#image-build
   build: ./Dockerfile
+  # location: statping/statping:v0.90.74
   # Port exposed through your container to route traffic to it.
   port: 8080
 
@@ -43,7 +44,7 @@ variables:                    # Pass environment variables as key value pairs.
   DB_CONN: postgres
   DB_USER: postgres
   DB_DATABASE: votes
-  USE_CDN: "false"
+  USE_CDN: false
   POSTGRES_SSLMODE: verify-ca
 
 secrets:                      # Pass secrets from AWS Systems Manager (SSM) Parameter Store.
